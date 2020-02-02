@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli&display=swap"
+      rel="stylesheet"
+    />
+    <title>Palindrome Checker</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <h1>Palindrom Checker</h1>
+        <p>
+          A palindrome is a word or sentence that's spelled the same way both
+          forward and backward, ignoring punctuation, case, and spacing.
+          Palindrom Checker will return <span>true</span> if the given string is
+          a palindrome. Otherwise it will return <span>false</span>.
+        </p>
+        <input type="text" id="check" placeholder="Type any palindrom..." />
+
+        <button onclick="palindrome(document.getElementById('check').value)">
+          Check
+        </button>
+
+        <p id="result">Click the "Check" button for the result</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
