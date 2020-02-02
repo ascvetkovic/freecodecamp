@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  color: #fff;
+  height: 100vh;
+  text-align: center;
+}
+
+#container {
+  /*Photo by Cristina Gottardi on Unsplash - https://unsplash.com/photos/I1Lv2yX67GI*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://images.unsplash.com/photo-1525874684015-58379d421a52?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: bottom center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  border-radius: 15px;
+  padding: 30px;
+  margin: 15px;
+}
+
+.panel h4,
+h1 {
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.panel h4 span:first-of-type {
+  opacity: 0.5;
+}
+
+.panel span:nth-of-type(2) {
+  color: #dd87ff;
+}
+
+.panel input,
+.panel button {
+  border: none;
+  border-radius: 3px;
+  display: block;
+  font-size: 16px;
+  padding: 8px 10px;
+  margin: 15px 0;
+  width: 100%;
+}
+
+.panel button {
+  background-image: linear-gradient(to bottom right, #c564eb, #c85ff1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  cursor: pointer;
+}
+
+.panel small {
+  font-size: 0.75em;
+  line-height: 10px;
+  opacity: 0.5;
+  letter-spacing: 1px;
+}
+
+.result-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 12px 10px;
+  height: 50px;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.result-container #result {
+  word-wrap: break-word;
+  max-width: calc(100% - 40px);
+}
+
+.result-container .btn {
+  font-size: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 40px;
+  width: 40px;
+  margin: 0;
+}
+
+.btn {
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 12px;
+}

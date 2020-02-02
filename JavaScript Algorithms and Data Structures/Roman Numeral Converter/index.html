@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7a230f0a67.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli&display=swap"
+      rel="stylesheet"
+    />
+    <title>Roman Numeral Converter</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="panel">
+        <h1>Roman Numeral Converter</h1>
+        <h4>
+          <span>Convert the number into a</span> <span>roman numeral</span>
+        </h4>
+        <input id="convert" type="text" placeholder="Type any number..." />
+        <button
+          onclick="convertToRoman(document.getElementById('convert').value)"
+        >
+          Convert
+        </button>
+        <div class="result-container">
+          <span id="result"></span>
+          <button class="btn" id="clipboard">
+            <i class="far fa-clipboard"></i>
+          </button>
+        </div>
+        <small>
+          Click the "Convert" button for the result. <br />
+          You can also copy Roman Numerals by clicking the icon on the right
+          side of the result.
+        </small>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
